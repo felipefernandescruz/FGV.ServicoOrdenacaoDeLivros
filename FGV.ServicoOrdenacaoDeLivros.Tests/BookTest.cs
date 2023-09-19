@@ -65,17 +65,16 @@ namespace FGV.ServicoOrdenacaoDeLivros.Tests
         [Fact]
         public async Task OrderBooksByFilter_WhenOrderTypeEnumIsTitleAsc_OrdersBooksByTitle()
         {
-            // Arrange
+            // Dado
             var request = new OrderFilterDTO { Books = _books, OrderTypeEnum = (int)OrderTypeEnum.TitleAsc };
 
-            // Configura o mock para retornar um resultado de validação válido
             _validatorMock.Setup(v => v.ValidateAsync(request, default))
                 .ReturnsAsync(new ValidationResult());
 
-            // Act
+            // Quando
             var result = await _bookService.OrderBooksByFilter(request);
 
-            // Assert
+            // Então
             Assert.Equal(3, result[0].Id);
             Assert.Equal(4, result[1].Id);
             Assert.Equal(1, result[2].Id);
@@ -85,17 +84,16 @@ namespace FGV.ServicoOrdenacaoDeLivros.Tests
         [Fact]
         public async Task OrderBooksByFilter_WhenOrderTypeEnumIsAuthorAscTitleDesc_OrdersBooksByAuthorAscTitleDesc()
         {
-            // Arrange
+            // Dado
             var request = new OrderFilterDTO { Books = _books, OrderTypeEnum = (int)OrderTypeEnum.AuthorAscTitleDesc };
 
-            // Configura o mock para retornar um resultado de validação válido
             _validatorMock.Setup(v => v.ValidateAsync(request, default))
                 .ReturnsAsync(new ValidationResult());
 
-            // Act
+            // Quando
             var result = await _bookService.OrderBooksByFilter(request);
 
-            // Assert
+            // Então
             Assert.Equal(1, result[0].Id);
             Assert.Equal(4, result[1].Id);
             Assert.Equal(3, result[2].Id);
@@ -105,17 +103,16 @@ namespace FGV.ServicoOrdenacaoDeLivros.Tests
         [Fact]
         public async Task OrderBooksByFilter_WhenOrderTypeEnumIsEditionDescAuthorDescTituloAsc_OrdersBooksByEditionDescAuthorDescTituloAsc()
         {
-            // Arrange
+            // Dado
             var request = new OrderFilterDTO { Books = _books, OrderTypeEnum = (int)OrderTypeEnum.EditionDescAuthorDescTituloAsc };
 
-            // Configura o mock para retornar um resultado de validação válido
             _validatorMock.Setup(v => v.ValidateAsync(request, default))
                 .ReturnsAsync(new ValidationResult());
 
-            // Act
+            // Quando
             var result = await _bookService.OrderBooksByFilter(request);
 
-            // Assert
+            // Então
             Assert.Equal(4, result[0].Id);
             Assert.Equal(1, result[1].Id);
             Assert.Equal(3, result[2].Id);
