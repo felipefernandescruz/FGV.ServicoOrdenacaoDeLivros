@@ -7,7 +7,7 @@ namespace FGV.ServicoOrdenacaoDeLivros.Domain.Book.Validator
     {
         public OrderFilterValidator()
         {
-            RuleFor(x => x.Books).NotEmpty().NotNull();
+            RuleFor(x => x.Books).NotNull();
             RuleFor(x => x.OrderTypeEnum).NotEmpty().NotNull();
         }
     }

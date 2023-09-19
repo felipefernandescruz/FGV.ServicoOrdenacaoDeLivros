@@ -28,7 +28,11 @@ namespace FGV.ServicoOrdenacaoDeLivros.Domain.Book
             if (booksToOrder == null)
                 throw new BadRequestException("Não há livros para buscar");
 
-            switch (orderFilterDTO.OrderTypeEnum)
+            if (booksToOrder.Count == 0)
+                return new List<BookResponse>();
+
+            
+                switch (orderFilterDTO.OrderTypeEnum)
             {
                 case (int)OrderTypeEnum.TitleAsc:
                     booksToOrder = orderByTitle(booksToOrder);

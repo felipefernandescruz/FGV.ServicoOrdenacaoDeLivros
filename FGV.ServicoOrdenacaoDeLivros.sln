@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FGV.ServicoOrdenacaoDeLivro
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FGV.ServicoOrdenacaoDeLivros.WebAPI", "FGV.ServicoOrdenacaoDeLivros.WebAPI\FGV.ServicoOrdenacaoDeLivros.WebAPI.csproj", "{6ACE8BCD-833D-4FB0-82BD-A38B4EBE0852}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FGV.ServicoOrneacaoDeLivros.InfraStructure", "FGV.ServicoOrneacaoDeLivros.InfraStructure\FGV.ServicoOrneacaoDeLivros.InfraStructure.csproj", "{FD94134F-FF3A-4F24-9804-1AAE95B82548}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FGV.ServicoOrneacaoDeLivros.InfraStructure", "FGV.ServicoOrneacaoDeLivros.InfraStructure\FGV.ServicoOrneacaoDeLivros.InfraStructure.csproj", "{FD94134F-FF3A-4F24-9804-1AAE95B82548}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FGV.ServicoOrdenacaoDeLivros.Tests", "FGV.ServicoOrdenacaoDeLivros.Tests\FGV.ServicoOrdenacaoDeLivros.Tests.csproj", "{DDDE4D3F-E575-45D8-ABDD-EDDBCEDF9F87}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{FD94134F-FF3A-4F24-9804-1AAE95B82548}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FD94134F-FF3A-4F24-9804-1AAE95B82548}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FD94134F-FF3A-4F24-9804-1AAE95B82548}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDDE4D3F-E575-45D8-ABDD-EDDBCEDF9F87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDDE4D3F-E575-45D8-ABDD-EDDBCEDF9F87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDDE4D3F-E575-45D8-ABDD-EDDBCEDF9F87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDDE4D3F-E575-45D8-ABDD-EDDBCEDF9F87}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
